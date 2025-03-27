@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <div class="input-section">
+            <input type="date" id="date" placeholder="Date">
+            <select id="category">
+                <option value="food">Food</option>
+                <option value="transport">Transport</option>
+                <option value="utilities">Utilities</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="number" id="amount" placeholder="Amount">
+            <input type="text" id="description" placeholder="Description">
+            <button id="addExpense">Add Expense</button>
+        </div>
+
+        <div class="expense-list">
+            <h2>Expenses</h2>
+            <ul id="expenses"></ul>
+        </div>
+
+        <div class="summary">
+            <h2>Total: <span id="total">0</span></h2>
+        </div>
+
+        <div class="footer">
+            <p>Built by Kwaku Sarfo Kissi</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
